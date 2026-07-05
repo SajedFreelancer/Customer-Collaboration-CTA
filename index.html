@@ -12,7 +12,7 @@
 
   
 <meta charset="UTF-8">
-  <title>SA-Collaboration-CTA</title>
+  <title>SA1-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -241,7 +241,7 @@
       margin-bottom: 8px;
     }
 
-    /* NFT packages row */
+    /*  packages row */
     .packages-row {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -316,7 +316,16 @@
       letter-spacing: 0.12em;
       color: var(--text-muted);
     }
-
+    .package-image {
+      width: 100%;
+      padding-top: 125%; /* مستطیل عمودی استاندارد */
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.8);
+      background: linear-gradient(135deg,#050712,#0b0f1f);
+    }
     /* Right column: profile + works */
     .right-panel {
       display: flex;
