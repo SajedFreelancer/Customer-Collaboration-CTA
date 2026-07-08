@@ -11,7 +11,7 @@
 
   
   <meta charset="UTF-8">
-  <title>SA-Collaboration-CTA</title>
+  <title>SA1-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -293,18 +293,22 @@
       flex-direction: column;
       gap: 12px;
     }
+    .right-panel-content {
+      position: relative;
+      z-index: 3;
+    }
     .tree-container {
       position: absolute;
       right: 0;
       top: 50%;
-      transform: translateY(-50%);
-      z-index: 2;
+      transform: translate( -40px , -50% )
+      z-index: 1;
       pointer-events: none;
     }
     .cosmic-tree {
       width: 420px;
-      opacity: 0.35;
-      filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.15));
+      opacity: 1;
+      filter: none;
     }
     .profile-card {
       padding: 14px 14px 12px;
@@ -611,71 +615,73 @@
         </div>
       </div>
       <div class="right-panel">
-        <div class="tree-container">
-          <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Tree%20idea.png?raw=true" alt="cosmic-tree" class="cosmic-tree">
-        </div>
-        <div class="profile-card">
-          <div class="profile-top">
-            <div class="profile-avatar">
-              <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/SA%20Profile.png?raw=true" alt="Profile" />
-            </div>
-            <div class="profile-info">
-              <div class="profile-name">My name</div>
-              <div class="profile-role">Logo designer</div>
-              <div class="profile-badge">Crafting Timeless Brands with Strategic Simplicit</div>
-            </div>
+        <div class="right-panel-content">
+          <div class="tree-container">
+            <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Tree%20idea.png?raw=true" alt="cosmic-tree" class="cosmic-tree">
           </div>
-          <p class="profile-text">
-            I focus on logo design and logo systems. My work is structured for clients who want clear packages, secure collaboration, and visual consistency across platforms .
-          </p>
-          <div class="social-row upcoming-row">
-            <a class="social-link" href="#" onclick="return false;">
-              <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/coming%20soon%20icone.png?raw=true" class="social-icon">
-              <span class="social-name">Soon</span>
-            </a>
-            <a class="social-link" href="#" onclick="return false;">
-              <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/coming%20soon%20icone.png?raw=true" class="social-icon">
-              <span class="social-name">Soon</span>
-            </a>
-          </div>
-          <div class="social-row">
-            <a class="social-link" href="https://ir.linkedin.com/in/sajed-abbaszadeh" target="_blank">
-              <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/linkdin%20icone.png?raw=true" class="social-icon">
-              <span class="social-name">LinkedIn</span>
-            </a>
-            <a class="social-link" href="https://www.behance.net/sajedabbaszadeh" target="_blank">
-              <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/behince%20icone.png?raw=true" class="social-icon">
-              <span class="social-name">Behance</span>
-            </a>
-            <a class="social-link" href="https://sajedabbaszadeh.medium.com/" target="_blank">
-              <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/medium%20icone.png?raw=true" class="social-icon">
-              <span class="social-name">Medium</span>
-            </a>
-          </div>
-        </div>
-        <div class="works-card">
-          <div class="works-title">Earning the Behance professional work medal :</div>
-          <div class="works-grid">
-            <div class="work-card" onclick="window.open('https://example.com/work-1', '_blank')">
-              <div class="work-image">
-                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Work1.png?raw=true" alt="Work 1" />
+          <div class="profile-card">
+            <div class="profile-top">
+              <div class="profile-avatar">
+                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/SA%20Profile.png?raw=true" alt="Profile" />
               </div>
-              <div class="work-label">Force Shop</div>
-            </div>
-            <div class="work-card" onclick="window.open('https://example.com/work-2', '_blank')">
-              <div class="work-image">
-                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Work2.png?raw=true" alt="Work 2" />
+              <div class="profile-info">
+                <div class="profile-name">My name</div>
+                <div class="profile-role">Logo designer</div>
+                <div class="profile-badge">Crafting Timeless Brands with Strategic Simplicit</div>
               </div>
-              <div class="work-label">Women's hair salon</div>
             </div>
-            <div class="work-card" onclick="window.open('https://example.com/work-3', '_blank')">
-              <div class="work-image">
-                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Work3.png?raw=true" alt="Work 3" />
-              </div>
-              <div class="work-label">Bookstore</div>
+            <p class="profile-text">
+              I focus on logo design and logo systems. My work is structured for clients who want clear packages, secure collaboration, and visual consistency across platforms .
+            </p>
+            <div class="social-row upcoming-row">
+              <a class="social-link" href="#" onclick="return false;">
+                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/coming%20soon%20icone.png?raw=true" class="social-icon">
+                <span class="social-name">Soon</span>
+              </a>
+              <a class="social-link" href="#" onclick="return false;">
+                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/coming%20soon%20icone.png?raw=true" class="social-icon">
+                <span class="social-name">Soon</span>
+              </a>
+            </div>
+            <div class="social-row">
+              <a class="social-link" href="https://ir.linkedin.com/in/sajed-abbaszadeh" target="_blank">
+                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/linkdin%20icone.png?raw=true" class="social-icon">
+                <span class="social-name">LinkedIn</span>
+              </a>
+              <a class="social-link" href="https://www.behance.net/sajedabbaszadeh" target="_blank">
+                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/behince%20icone.png?raw=true" class="social-icon">
+                <span class="social-name">Behance</span>
+              </a>
+              <a class="social-link" href="https://sajedabbaszadeh.medium.com/" target="_blank">
+                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/medium%20icone.png?raw=true" class="social-icon">
+                <span class="social-name">Medium</span>
+              </a>
             </div>
           </div>
-        </div>
+          <div class="works-card">
+            <div class="works-title">Earning the Behance professional work medal :</div>
+            <div class="works-grid">
+              <div class="work-card" onclick="window.open('https://example.com/work-1', '_blank')">
+                <div class="work-image">
+                  <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Work1.png?raw=true" alt="Work 1" />
+                </div>
+                <div class="work-label">Force Shop</div>
+              </div>
+              <div class="work-card" onclick="window.open('https://example.com/work-2', '_blank')">
+                <div class="work-image">
+                  <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Work2.png?raw=true" alt="Work 2" />
+                </div>
+                <div class="work-label">Women's hair salon</div>
+              </div>
+              <div class="work-card" onclick="window.open('https://example.com/work-3', '_blank')">
+                <div class="work-image">
+                  <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Work3.png?raw=true" alt="Work 3" />
+                </div>
+                <div class="work-label">Bookstore</div>
+              </div>
+            </div>
+          </div>
+        </div>  
       </div>
     </section>
   </div>
