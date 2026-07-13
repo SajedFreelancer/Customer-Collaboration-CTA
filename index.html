@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA1-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -234,34 +234,35 @@
       opacity: 1;
       max-height: 200px;
     }
-    .collab-label {
+    .collab1-label {
       font-size: 18px;
       font-weight: 700;
-    }
-    .workflow-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-    }
-    .workflow-image {
-      width: 85%;
-      max-width: 1100px;
-      filter: drop-shadow(0px 4px 12px rgba(0,0,0,0.15));
     }
     .packages-row {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 6px;
-      opacity: 0;
-      transform: translateY(20px);
-      pointer-events: none;
-      transition: all 0.35s ease;
     }
-    .platform-card:hover ~ .packages-row {
-      opacity: 1;
-      transform: translateY(0px);
-      pointer-events: auto;
+    @media (max-width: 900px) {
+      .packages-row {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+    @media (max-width: 700px) {
+      .packages-row {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 14px; 
+          margin-top: 12px;
+      }
+      .package-card {
+          margin: 0; 
+          padding: 12px;
+      }
+      .package-image img {
+          padding: 0;
+          margin: 0;
+      }
     }
     .package-card {
       border-radius: var(--radius-md);
@@ -274,6 +275,22 @@
       overflow: hidden;
       cursor: pointer;
       transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+    }
+    .package-card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(circle at 0% 0%, rgba(59, 180, 255, 0.18), transparent 60%);
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+    }
+    .package-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 46px rgba(0, 0, 0, 0.9);
+      border-color: rgba(246, 196, 83, 0.7);
+    }
+    .package-card:hover::before {
+      opacity: 1;
     }
     .package-image {
       width: 100%;
@@ -291,6 +308,21 @@
       object-fit: contain;
       border-radius: var(--radius-md);
       object-position: center center;
+    }
+    .collab2-label {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .workflow-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    }
+    .workflow-image {
+      width: 85%;
+      max-width: 1100px;
+      filter: drop-shadow(0px 4px 12px rgba(0,0,0,0.15));
     }
     .right-panel {
       display: flex;
@@ -650,26 +682,21 @@
             </div>
           </a>
         </div>
-        <div class="collab-label">Cooperation stages</div>
+        <div class="collab1-label">Collaboration packages</div>
+        <div class="packages-row">
+          <div class="package-image">
+            <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Basic.png?raw=true">
+          </div>
+          <div class="package-image">
+            <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/SA-pro.png?raw=true">
+          </div>
+          <div class="package-image">
+            <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Premium.png?raw=true">
+          </div>
+        </div>
+        <div class="collab2-label">Cooperation stages</div>
         <div class="workflow-container">
           <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Cooperation%20stages.png?raw=true" alt="workflow" class="workflow-image">
-        </div>
-        <div class="packages-row">
-          <div class="package-card">
-            <div class="package-image">
-              <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Basic.png?raw=true" alt="Basic Package">
-            </div>
-          </div>
-          <div class="package-card">
-            <div class="package-image">
-              <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/SA-pro.png?raw=true" alt="Pro Package">
-            </div>
-          </div>
-          <div class="package-card">
-            <div class="package-image">
-              <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Premium.png?raw=true" alt="Premium Package">
-            </div>
-          </div>
         </div>
       </div>
       <div class="right-panel">
