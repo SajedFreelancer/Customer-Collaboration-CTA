@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA3-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -219,6 +219,9 @@
       opacity: 1;
       max-height: 200px;
     }
+    .platform-card:hover ~ #packagesOverlay {
+      display: flex;
+    }
     .packages-row {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -296,7 +299,7 @@
       left: 0px;
       width: auto;
       padding: 20px;
-      display: flex;
+      display: none;
       justify-content: center;
       backdrop-filter: blur(14px);
       background: rgba(0, 0, 0, 0.35);
@@ -641,22 +644,22 @@
               Click to start collaborating on the LaborX Platform
             </div>
           </a>
-        </div>
-        <div class="packages-overlay" id="packagesOverlay"> 
-          <div class="packages-row">
-            <div class="package-card">
-              <div class="package-image">
-                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Basic.png?raw=true">
+          <div class="packages-overlay" id="packagesOverlay"> 
+            <div class="packages-row">
+              <div class="package-card">
+                <div class="package-image">
+                  <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Basic.png?raw=true">
+                </div>
               </div>
-            </div>
-            <div class="package-card">
-              <div class="package-image">
-                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/SA-pro.png?raw=true">
+              <div class="package-card">
+                <div class="package-image">
+                  <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/SA-pro.png?raw=true">
+                </div>
               </div>
-            </div>
-            <div class="package-card">
-              <div class="package-image">
-                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Premium.png?raw=true">
+              <div class="package-card">
+                <div class="package-image">
+                  <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Sa-Premium.png?raw=true">
+                </div>
               </div>
             </div>
           </div>
