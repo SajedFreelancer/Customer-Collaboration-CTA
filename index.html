@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA-Collaboration-CTA</title>
+  <title>SA3-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -353,8 +353,18 @@
     }
     .hex-row {
       display: flex;
-      gap: 18px;
+      gap: 25px;
       justify-content: center;
+    }
+    .hex-card::before {
+      content: "";
+      position: absolute;
+      inset: -6px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      z-index: -1;
     }
     .hex-card {
       width: 120px;
